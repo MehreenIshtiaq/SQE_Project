@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="698.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI_XML.Add_Course_Controller">
+   <children>
+      <SplitPane dividerPositions="0.13239517518667432" layoutX="4.0" layoutY="2.0" orientation="VERTICAL" prefHeight="698.0" prefWidth="944.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="346.0" prefWidth="958.0" style="-fx-background-color: #363333;">
+               <children>
+                  <ImageView fitHeight="91.0" fitWidth="279.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="C:\Users\Ali Hamza\eclipse-workspace\_SDA_Project\logo_LMS.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.23618197278911562" layoutX="38.0" layoutY="23.0" prefHeight="593.6" prefWidth="942.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="593.0" prefWidth="210.0" style="-fx-background-color: #363333;">
+                           <children>
+                              <Button layoutX="4.0" layoutY="109.0" mnemonicParsing="false" onAction="#studentEnrollment" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Student Enrollment" textFill="#fffdfd">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="4.0" layoutY="168.0" mnemonicParsing="false" onAction="#addTeacher" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Add Teacher" textFill="#fffdfd">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="4.0" layoutY="225.0" mnemonicParsing="false" onAction="#generateFeeChallan" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Generate Fee Challan" textFill="#fffdfd">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="4.0" layoutY="283.0" mnemonicParsing="false" onAction="#updateTeacherRecord" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Update Teacher Record" textFill="#fffdfd">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="4.0" layoutY="340.0" mnemonicParsing="false" onAction="#updateStudentRecord" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Update Studenet Record" textFill="#fffdfd">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="4.0" layoutY="398.0" mnemonicParsing="false" onAction="#deleteAccount" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Delete Account" textFill="#fffdfd">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="4.0" layoutY="52.0" mnemonicParsing="false" onAction="#homeBtn" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Home" textFill="#fffdfd">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="593.0" prefWidth="716.0">
+                           <children>
+                              <Text layoutX="30.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Course" underline="true" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="13.626953125">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="courseName" layoutX="45.0" layoutY="95.0" prefHeight="30.0" prefWidth="219.0" promptText="Software Design and Architechture" AnchorPane.leftAnchor="39.0" AnchorPane.topAnchor="95.0" />
+                              <Text layoutX="39.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Name">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="courseCode" layoutX="385.0" layoutY="95.0" prefHeight="30.0" prefWidth="219.0" promptText="SE2002" AnchorPane.rightAnchor="106.80000000000001" />
+                              <Text layoutX="390.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Code">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="creditHours" layoutX="42.0" layoutY="166.0" prefHeight="30.0" prefWidth="219.0" promptText="4" />
+                              <Text layoutX="42.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Credit hour">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="courseType" layoutX="390.0" layoutY="165.0" prefHeight="30.0" prefWidth="219.0" promptText="Core" />
+                              <Text layoutX="390.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Type">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="addButton" layoutX="510.0" layoutY="300.0" mnemonicParsing="false" onAction="#addCourse" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: #1597ed;" text="Add" textFill="WHITE">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Button>
+                              <TextField fx:id="courseGrade" layoutX="39.0" layoutY="240.0" prefHeight="30.0" prefWidth="219.0" promptText="A+, A, B+, B" />
+                              <Text layoutX="39.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Grade">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="prerequisite" layoutX="390.0" layoutY="239.0" prefHeight="30.0" prefWidth="219.0" promptText="OOP" />
+                              <Text layoutX="390.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Prerequisite">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

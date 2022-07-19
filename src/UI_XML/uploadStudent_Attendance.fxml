@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="698.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI_XML.uploadAttendance_Controller">
+   <children>
+      <SplitPane dividerPositions="0.13239517518667432" layoutX="4.0" layoutY="2.0" orientation="VERTICAL" prefHeight="698.0" prefWidth="944.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="346.0" prefWidth="958.0" style="-fx-background-color: #363333;">
+               <children>
+                  <ImageView fitHeight="91.0" fitWidth="279.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="C:\Users\Ali Hamza\eclipse-workspace\_SDA_Project\logo_LMS.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="401.0" layoutY="55.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher Portal">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.25956632653061223" layoutX="38.0" layoutY="23.0" prefHeight="593.6" prefWidth="942.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="593.0" prefWidth="210.0" style="-fx-background-color: #363333;">
+                           <children>
+                              <ScrollPane layoutX="2.0" prefHeight="601.0" prefWidth="250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="622.0" prefWidth="252.0" style="-fx-background-color: #363333;">
+                                       <children>
+                                          <Button layoutX="5.0" layoutY="80.0" mnemonicParsing="false" onAction="#uploadStudentMarks" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Upload Marks" textFill="#fffdfd">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Button>
+                                          <Button layoutX="5.0" layoutY="137.0" mnemonicParsing="false" onAction="#updateAttendance" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Update Attendance" textFill="#fffdfd">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Button>
+                                          <Button layoutX="5.0" layoutY="193.0" mnemonicParsing="false" onAction="#updateMarks" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Update Marks" textFill="#fffdfd">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Button>
+                                          <Button layoutX="5.0" layoutY="250.0" mnemonicParsing="false" onAction="#uploadAssignment" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Upload Assignment" textFill="#fffdfd">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Button>
+                                          <Button layoutX="5.0" layoutY="307.0" mnemonicParsing="false" onAction="#uploadSlides" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Upload Slides" textFill="#fffdfd">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Button>
+                                          <Button layoutX="5.0" layoutY="366.0" mnemonicParsing="false" onAction="#makeAnnouncement" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Make Announcement" textFill="#fffdfd">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Button>
+                                          <Button layoutX="5.0" layoutY="428.0" mnemonicParsing="false" onAction="#uploadGrade" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Upload Grade" textFill="#fffdfd">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Button>
+                                          <Button layoutX="5.0" layoutY="25.0" mnemonicParsing="false" onAction="#homeScreen" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Home" textFill="#fffdfd">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="601.0" prefWidth="670.0">
+                           <children>
+                              <Text layoutX="32.0" layoutY="46.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Upload Attendance" underline="true">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Text>
+                              <Button layoutX="520.0" layoutY="125.0" mnemonicParsing="false" onAction="#selectData" prefHeight="26.0" prefWidth="73.0" style="-fx-background-color: #1597ed;" text="Select" textFill="WHITE">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <TableView fx:id="attendanceViewTable" layoutX="65.0" layoutY="171.0" prefHeight="354.0" prefWidth="529.0" />
+                              <Button layoutX="521.0" layoutY="550.0" mnemonicParsing="false" onAction="#uploadAttendanceBtn" prefHeight="26.0" prefWidth="73.0" style="-fx-background-color: #1597ed;" text="Upload" textFill="WHITE">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <DatePicker fx:id="date" layoutX="418.0" layoutY="77.0" promptText="Enter Date" />
+                              <TextField fx:id="section" layoutX="236.0" layoutY="77.0" promptText="Enter Section (e.g.)P" />
+                              <TextField fx:id="course" layoutX="32.0" layoutY="77.0" prefHeight="26.0" prefWidth="175.0" promptText="Enter Course Code i.e CS2001" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

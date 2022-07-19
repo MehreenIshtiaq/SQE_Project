@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="698.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI_XML.Assign_Course_Controller">
+   <children>
+      <SplitPane dividerPositions="0.13239517518667432" layoutX="4.0" layoutY="2.0" orientation="VERTICAL" prefHeight="698.0" prefWidth="944.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="346.0" prefWidth="958.0" style="-fx-background-color: #363333;">
+               <children>
+                  <ImageView fitHeight="91.0" fitWidth="279.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="C:\Users\Ali Hamza\eclipse-workspace\_SDA_Project\logo_LMS.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.23618197278911562" layoutX="38.0" layoutY="23.0" prefHeight="593.6" prefWidth="942.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="593.0" prefWidth="210.0" style="-fx-background-color: #363333;">
+                           <children>
+                              <Button layoutX="4.0" layoutY="108.0" mnemonicParsing="false" onAction="#studentEnrollment" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Student Enrollment" textFill="#fffdfd">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="4.0" layoutY="167.0" mnemonicParsing="false" onAction="#addTeacher" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Add Teacher" textFill="#fffdfd">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="4.0" layoutY="225.0" mnemonicParsing="false" onAction="#addCourse" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Add Course" textFill="#fffdfd">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="4.0" layoutY="288.0" mnemonicParsing="false" onAction="#generateFeeChallan" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Generate Fee Challan" textFill="#fffdfd">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="4.0" layoutY="346.0" mnemonicParsing="false" onAction="#updateTeacherRecord" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Update Teacher Record" textFill="#fffdfd">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="4.0" layoutY="403.0" mnemonicParsing="false" onAction="#updateStudentRecord" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Update Studenet Record" textFill="#fffdfd">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="4.0" layoutY="461.0" mnemonicParsing="false" onAction="#deleteAccount" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Delete Account" textFill="#fffdfd">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="4.0" layoutY="47.0" mnemonicParsing="false" onAction="#homeBtn" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Home" textFill="#fffdfd">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="593.0" prefWidth="716.0">
+                           <children>
+                              <Text layoutX="32.0" layoutY="46.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Assign Course To Teacher" underline="true">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Text>
+                              <TableView fx:id="courseTableView" layoutX="32.0" layoutY="116.0" prefHeight="200.0" prefWidth="364.0" style="-fx-border-color: grey;" />
+                              <Text layoutX="32.0" layoutY="109.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Available Courses">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="423.0" layoutY="138.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Course">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="teacherID" layoutX="423.0" layoutY="244.0" prefHeight="30.0" prefWidth="166.0" />
+                              <Text layoutX="477.0" layoutY="202.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Assign to">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="423.0" layoutY="238.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher ID">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Button layoutX="537.0" layoutY="288.0" mnemonicParsing="false" onAction="#assignCourse" style="-fx-background-color: #1597ed;" text="Assign" textFill="WHITE">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <TextField fx:id="courseCode" layoutX="423.0" layoutY="144.0" prefHeight="30.0" prefWidth="166.0" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

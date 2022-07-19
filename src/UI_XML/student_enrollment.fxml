@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="698.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI_XML.Student_enrollment_Controller">
+   <children>
+      <SplitPane dividerPositions="0.13239517518667432" layoutX="4.0" layoutY="2.0" orientation="VERTICAL" prefHeight="698.0" prefWidth="944.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="346.0" prefWidth="958.0" style="-fx-background-color: #363333;">
+               <children>
+                  <ImageView fitHeight="91.0" fitWidth="279.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="C:\Users\Ali Hamza\eclipse-workspace\_SDA_Project\logo_LMS.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.23618197278911562" layoutX="38.0" layoutY="23.0" prefHeight="593.6" prefWidth="942.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="593.0" prefWidth="210.0" style="-fx-background-color: #363333;">
+                           <children>
+                              <Button layoutX="4.0" layoutY="93.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Add Teacher" textFill="WHITE">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Button>
+                              <Button layoutX="4.0" layoutY="151.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Add Course" textFill="WHITE">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Button>
+                              <Button layoutX="4.0" layoutY="208.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Generate Fee Challan" textFill="WHITE">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Button>
+                              <Button layoutX="4.0" layoutY="266.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Update Teacher Record" textFill="WHITE">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Button>
+                              <Button layoutX="4.0" layoutY="323.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Update Studenet Record" textFill="WHITE">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Button>
+                              <Button layoutX="4.0" layoutY="381.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Delete Account" textFill="WHITE">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Button>
+                              <Button layoutX="4.0" layoutY="31.0" mnemonicParsing="false" onAction="#homeBtn" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: grey;" text="Home" textFill="WHITE">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="593.0" prefWidth="716.0">
+                           <children>
+                              <TextField fx:id="password" layoutX="39.0" layoutY="502.0" prefHeight="30.0" prefWidth="219.0" promptText="Hamza!@#$%^" />
+                              <Text layoutX="32.0" layoutY="46.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Enrollment" underline="true" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="13.626953125">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="39.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="390.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="firstName" layoutX="39.0" layoutY="109.0" prefHeight="30.0" prefWidth="219.0" promptText="Hamza" AnchorPane.leftAnchor="39.0" />
+                              <TextField fx:id="lastName" layoutX="390.0" layoutY="109.0" prefHeight="30.0" prefWidth="219.0" promptText="Azam" AnchorPane.rightAnchor="106.80000000000001" />
+                              <Text layoutX="39.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Roll Number">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="rollNumber" layoutX="39.0" layoutY="185.0" prefHeight="30.0" prefWidth="219.0" promptText="20i1881" />
+                              <Text layoutX="390.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-Mail">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="email" layoutX="390.0" layoutY="183.0" prefHeight="30.0" prefWidth="219.0" promptText="i201881@nu.edu.pk" />
+                              <Text layoutX="39.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Batch">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="batch" layoutX="39.0" layoutY="265.0" prefHeight="30.0" prefWidth="219.0" promptText="20th" />
+                              <Text layoutX="390.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Degree Name">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="degreeName" layoutX="390.0" layoutY="263.0" prefHeight="30.0" prefWidth="219.0" promptText="software engineering" />
+                              <Text layoutX="39.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Section">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="section" layoutX="39.0" layoutY="344.0" prefHeight="30.0" prefWidth="219.0" promptText="SE-P" />
+                              <Text layoutX="390.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="address" layoutX="390.0" layoutY="342.0" prefHeight="30.0" prefWidth="219.0" promptText="Mangat M.B.Din" />
+                              <Text layoutX="39.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="phoneNumber" layoutX="39.0" layoutY="420.0" prefHeight="30.0" prefWidth="219.0" promptText="03180000000" />
+                              <Text layoutX="390.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNIC">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="CNIC" layoutX="390.0" layoutY="418.0" prefHeight="30.0" prefWidth="219.0" promptText="34420430000000" />
+                              <Button fx:id="submit" layoutX="567.0" layoutY="545.0" mnemonicParsing="false" onAction="#submitEnrollment" prefHeight="27.0" prefWidth="84.0" style="-fx-background-color: #1597ed;" text="Submit" textFill="WHITE">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Button>
+                              <Text layoutX="39.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="390.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Password">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="confirmPassword" layoutX="390.0" layoutY="500.0" prefHeight="30.0" prefWidth="219.0" promptText="Hamza!@#$%^" />
+                              <ComboBox fx:id="gender" layoutX="160.0" layoutY="546.0" onAction="#genderFun" prefHeight="26.0" prefWidth="86.0" promptText="Gender" />
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
