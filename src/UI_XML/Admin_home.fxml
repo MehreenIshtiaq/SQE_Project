@@ -17,10 +17,10 @@
       <SplitPane dividerPositions="0.13239517518667432" layoutX="4.0" layoutY="2.0" orientation="VERTICAL" prefHeight="698.0" prefWidth="944.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="346.0" prefWidth="958.0" style="-fx-background-color: #363333;">
-               <children>
+      	         <children>
                   <ImageView fitHeight="91.0" fitWidth="279.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="C:\Users\Ali Hamza\eclipse-workspace\_SDA_Project\logo_LMS.png" />
+                        <Image url="D:\Fx\logo_LMS.png" />
                      </image>
                   </ImageView>
                   <Text fill="WHITE" layoutX="411.0" layoutY="55.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Portal">

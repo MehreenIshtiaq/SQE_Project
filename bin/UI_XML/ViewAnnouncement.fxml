@@ -22,7 +22,7 @@
                <children>
                   <ImageView fitHeight="91.0" fitWidth="279.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="C:\Users\Ali Hamza\eclipse-workspace\_SDA_Project\logo_LMS.png" />
+                        <Image url="D:\Fx\logo_LMS.png" />
                      </image>
                   </ImageView>
                   <Text fill="WHITE" layoutX="405.0" layoutY="57.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Portal">

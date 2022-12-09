@@ -70,6 +70,7 @@ public class TranscriptController {
 		transcriptTable.setItems(data);
 		transcriptTable.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
 		
+		
 	}
 
 	@FXML

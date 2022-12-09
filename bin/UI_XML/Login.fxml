@@ -23,7 +23,7 @@
                <children>
                   <ImageView fitHeight="89.0" fitWidth="200.0" layoutY="6.0">
                      <image>
-                        <Image url="C:\Users\Ali Hamza\eclipse-workspace\_SDA_Project\logo_LMS.png" />
+                        <Image url="D:\Fx\logo_LMS.png" />
                      </image>
                   </ImageView>
                </children>
@@ -66,7 +66,7 @@
                               <ImageView layoutX="68.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true" />
                               <ImageView fitHeight="573.0" fitWidth="546.0" layoutX="2.0">
                                  <image>
-                                    <Image url="C:\Users\Ali Hamza\eclipse-workspace\_SDA_Project\background_Login.png" />
+                                    <Image url="D:\Fx\background_Login.png" />
                                  </image>
                                  <effect>
                                     <BoxBlur iterations="0" />

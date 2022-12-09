@@ -21,7 +21,7 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 
-			String fxmlDocPath= "src/UI_XML/Login.fxml";
+			String fxmlDocPath= "src\\UI_XML\\Login.fxml";
 			FileInputStream fxmlStream= new FileInputStream(fxmlDocPath);
 			AnchorPane root=  (AnchorPane) loader.load(fxmlStream);
 

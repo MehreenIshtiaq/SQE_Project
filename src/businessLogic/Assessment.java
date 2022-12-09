@@ -8,6 +8,7 @@ public class Assessment {
 	private String obtainedMarks;
 	private double totalMarks;
 	private double absolutes;
+	private double ObtainedMarks;
 	//private String assessmetnName;
 	private String courseCode;
 	
@@ -19,6 +20,17 @@ public class Assessment {
 		this.absolutes= absolute;
 		this.SN= SN;
 		
+		
+		
+	}
+	
+	public Assessment(String rollNumber, double ObtainedMakrs, double totalMarks, double absolute) {
+		
+		
+		this.ObtainedMarks=ObtainedMarks;
+		this.totalMarks= totalMarks;
+		this.absolutes= absolute;
+		this.rollNumber= rollNumber;
 		
 		
 	}

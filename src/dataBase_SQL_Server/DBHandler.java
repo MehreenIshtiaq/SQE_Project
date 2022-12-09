@@ -27,10 +27,10 @@ public class DBHandler implements PersistenceHandler{
 			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/lms","root","");
 
 			if(con == null) {
-				System.out.println("DB connection failed");
+				//System.out.println("DB connection failed");
 			}else {
 
-				System.out.println("DB connection successful");
+				//System.out.println("DB connection successful");
 				// saveRecord();
 
 			}
@@ -466,7 +466,7 @@ public class DBHandler implements PersistenceHandler{
 		Statement stmt;
 		try {
 			stmt = con.createStatement();
-			//Teacher Reacord reading
+			//Teacher Record reading
 			String sql="Select * from Course";
 			ResultSet rs= stmt.executeQuery(sql);
 			while(rs.next()) {
@@ -503,7 +503,7 @@ public class DBHandler implements PersistenceHandler{
 			statement.setString(4,grade);
 			int rowsInserted = statement.executeUpdate();
 			if (rowsInserted > 0) {
-				System.out.println("A new Course was registered!");
+				System.out.print("A new Course was registered!");
 				con.close();
 			}
 		} catch (SQLException e) {
@@ -528,7 +528,7 @@ public class DBHandler implements PersistenceHandler{
 			statement.setString(3,teacherID);
 			int rowsInserted = statement.executeUpdate();
 			if (rowsInserted > 0) {
-				System.out.println("A new Course was assigned!");
+				System.out.print("A new Course was assigned!");
 				con.close();
 			}
 		} catch (SQLException e) {
@@ -591,7 +591,7 @@ public class DBHandler implements PersistenceHandler{
 			statement.setString(10, password);
 			int rowsInserted = statement.executeUpdate();
 			if (rowsInserted > 0) {
-				System.out.println("A new teacher record was inserted successfully!");
+				System.out.print("A new teacher record was inserted successfully!");
 				con.close();
 			}
 		} catch (SQLException e) {
@@ -655,7 +655,7 @@ public class DBHandler implements PersistenceHandler{
 			statement.setString(4, text);
 			int rowsInserted = statement.executeUpdate();
 			if (rowsInserted > 0) {
-				System.out.println("A new announcement record was inserted successfully!");
+				System.out.print("A new announcement record was inserted successfully!");
 				//con.close();
 			}
 		} catch (SQLException e) {
@@ -841,7 +841,7 @@ public class DBHandler implements PersistenceHandler{
 			int rowsInserted = statement.executeUpdate();
 			if (rowsInserted > 0) {
 
-				System.out.println("A new marks record was inserted successfully!");
+				System.out.print("A new marks record was inserted successfully!");
 			}
 		} catch (SQLException e) {
 
@@ -904,7 +904,7 @@ public class DBHandler implements PersistenceHandler{
 			statement = con.prepareStatement(sql);
 			int rowsDeleted = statement.executeUpdate();
 			if (rowsDeleted > 0) {
-				System.out.println("A user was deleted successfully!");
+				System.out.print("A user was deleted successfully!");
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
